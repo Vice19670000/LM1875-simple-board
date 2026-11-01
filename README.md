@@ -29,4 +29,4 @@ Please be sure what your AC voltage doesn't exceed the absolute maximum rating, 
 
 ICs can dissipate large amounts of energy, so make sure your heatsink is powerful enough for them.
 
-**Next changes upcoming later...**
+**Next changes upcoming later... And .zip archivos same**
