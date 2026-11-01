@@ -14,19 +14,23 @@ You can put the same signal on INA and INB for BTL, and if you want Stereo, plea
 
 2)Output power: 30W RMS (±15V, BTL, 8Ω load) or 15W RMS (±15V, SL, 4Ω/IC).
 
-3)Maximum TDP: 6W (±30V) or 3W (±15V) (no load).
+3)Maximum QDP (Per IC): 6W (±30V) or 3W (±15V) (no load).
 
-4)Audio Signal Input (INA and INB): -VEE to VCC (this is calculated by multiplying the AC input RMS voltage by the square root of 2
+4)Maximum TDP (Per IC): 30W at full current and power output (±30V, 4Ω load, full avaliable swing output). Maximum TDP (total) is TDP (IC1) + TDP(IC2)
 
-| Vdc (GND to -VEE or +VCC) = (Vrms (AC) * √2) / 2 |
+5)Audio Signal Input (INA and INB): -VEE to VCC (this is calculated by multiplying the AC input RMS voltage by the square root of 2
+
+| Vdc (GND to -VEE or +VCC) = (Vrms (AC) * √2 - Vd)/ 2 |
 
 
-*WARNING: this will only give you the rail-to-rail voltage from a common reference point (ground).
+*WARNING: this will only give you the rail-to-rail voltage from a common reference point (ground) and it needs totally symetricall Transformer.
 
 # Extra cautions
 
 Please be sure what your AC voltage doesn't exceed the absolute maximum rating, and don't load the amplifier with 4 ohms in BTL mode, the ICs it will burn (the resistance of each one sees is Rload / 2).
 
 ICs can dissipate large amounts of energy, so make sure your heatsink is powerful enough for them.
+
+ANYWAY THE VALUES CAN CHANGE OR DIFFER FROM THIS INFO. Read the datasheet of the ICs for more accurate info.
 
 **Next changes upcoming later... And .zip archives same**
